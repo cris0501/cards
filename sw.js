@@ -5,7 +5,6 @@ self.addEventListener('install', e => {
     const installShell = caches.open(staticCache)
         .then( cache => {
             return cache.addAll([
-                '/',
                 'index.html',
                 'img/astronauta.webp',
                 'css/app.c22f0e7f',
