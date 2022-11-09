@@ -9,14 +9,13 @@ self.addEventListener('install', e => {
                 'index.html',
                 'img/astronauta.webp',
                 'css/app.c22f0e7f',
-                'ccs/home.9c9334fe.css',
+                'css/home.9c9334fe.css',
                 'js/app.a88add4b.js',
                 'js/chunk-vendors.a43fb1c6.js',
                 'js/home.9442b756.js',
                 'js/info.2de258ad.js',
             ]);
         });
-    caches.open(dynamicCache);
     e.waitUntil(installShell);
 });
 
