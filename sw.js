@@ -2,20 +2,20 @@ const staticCache = "APP_SHELL_v1";
 const dynamicCache = "Dynamic_v1";
 
 self.addEventListener('install', e => {
-    const installShell = caches.open(staticCache)
-        .then( cache => {
-            return cache.addAll([
-                'index.html',
-                'img/astronauta.webp',
-                'css/app.c22f0e7f',
-                'css/home.9c9334fe.css',
-                'js/app.a88add4b.js',
-                'js/chunk-vendors.a43fb1c6.js',
-                'js/home.9442b756.js',
-                'js/info.2de258ad.js',
-            ]);
-        });
-    e.waitUntil(installShell);
+    //const installShell = caches.open(staticCache)
+    //    .then( cache => {
+    //        return cache.addAll([
+    //            'index.html',
+    //            'img/astronauta.webp',
+    //            'css/app.c22f0e7f',
+    //            'css/home.9c9334fe.css',
+    //            'js/app.a88add4b.js',
+    //            'js/chunk-vendors.a43fb1c6.js',
+    //            'js/home.9442b756.js',
+    //            'js/info.2de258ad.js',
+    //        ]);
+    //    });
+    //e.waitUntil(installShell);
 });
 
 self.addEventListener('activate', () => {
